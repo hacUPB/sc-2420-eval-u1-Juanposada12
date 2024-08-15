@@ -142,14 +142,14 @@ Estructura tecnológica que permite el acceso a recursos informáticos a través
 ## 4. MAPA CONCEPTUAL https://lucid.app/lucidspark/c04cb10c-07fc-4021-9588-f89fb9de7797/edit?view_items=-mO39900AnWs&invitationId=inv_a29f7434-2615-418e-8887-65cf5e40a561
 ![image](https://github.com/user-attachments/assets/ce856578-7105-40db-bbc9-6876fe62b59b)
 
-### 5. PROFUNDIZACION DE CPU
+## 5. PROFUNDIZACION DE CPU
 
 
-## 1. ¿Qué es la CPU?
+### 1. ¿Qué es la CPU?
 
 La CPU, o Unidad Central de Procesamiento, es el componente principal de un ordenador que realiza la mayoría de las operaciones de procesamiento de datos. Se puede considerar como el "cerebro" del sistema, ya que coordina y ejecuta instrucciones de programas mediante cálculos y operaciones lógicas.
 
-## 2. Funciones Principales de la CPU
+###  2. Funciones Principales de la CPU
 
 La CPU lleva a cabo tres funciones principales:
 
@@ -159,17 +159,17 @@ La CPU lleva a cabo tres funciones principales:
 
 Este ciclo de operaciones se conoce como el ciclo de instrucción.
 
-## 3. Componentes Internos de la CPU
+### 3. Componentes Internos de la CPU
 
-### 3.1. ALU (Unidad Aritmético-Lógica)
+#### 3.1. ALU (Unidad Aritmético-Lógica)
 
 La ALU es responsable de realizar operaciones aritméticas (suma, resta, multiplicación, división) y operaciones lógicas (AND, OR, NOT). Es el componente que efectúa los cálculos necesarios para el procesamiento de datos.
 
-### 3.2. CU (Unidad de Control)
+#### 3.2. CU (Unidad de Control)
 
 La CU coordina el funcionamiento de la CPU. Interpreta las instrucciones del programa y envía señales a la ALU y a otros componentes del sistema para llevar a cabo estas instrucciones. Actúa como el director de orquesta que garantiza que cada parte de la CPU y el sistema trabajen en conjunto.
 
-### 3.3. Registros
+#### 3.3. Registros
 
 Los registros son pequeñas ubicaciones de almacenamiento dentro de la CPU que almacenan datos e instrucciones temporalmente. Son extremadamente rápidos y permiten que la CPU acceda a datos cruciales sin tener que recurrir a la memoria RAM, lo que optimiza la velocidad del procesamiento. Algunos tipos de registros incluyen:
 
@@ -177,7 +177,7 @@ Los registros son pequeñas ubicaciones de almacenamiento dentro de la CPU que a
 - **Registro de Instrucción (IR):** Contiene la instrucción que se está ejecutando actualmente.
 - **Contador de Programa (PC):** Mantiene la dirección de la siguiente instrucción que se debe ejecutar.
 
-### 3.4. Cache
+#### 3.4. Cache
 
 La memoria caché es una forma de memoria de alta velocidad que almacena temporalmente las instrucciones y datos más utilizados por la CPU. Se encuentra más cerca de la CPU que la memoria RAM, lo que permite un acceso más rápido y mejora el rendimiento general del sistema. Generalmente, hay múltiples niveles de caché (L1, L2, L3):
 
@@ -185,19 +185,19 @@ La memoria caché es una forma de memoria de alta velocidad que almacena tempora
 - **Caché L2:** Más grande pero algo más lenta, también puede estar integrada o en un chip separado.
 - **Caché L3:** Aún más grande y más lenta que L1 y L2, utilizada por varios núcleos en CPUs multinúcleo.
 
-### 3.5. Bus de Datos
+#### 3.5. Bus de Datos
 
 El bus de datos es un conjunto de conductores que transporta datos entre la CPU, la memoria y otros componentes del sistema. La cantidad de líneas en el bus de datos determina cuántos bits pueden ser transferidos a la vez (por ejemplo, un bus de 32 bits puede transferir 32 bits de datos en un solo ciclo).
 
-### 3.6. Bus de Direcciones
+#### 3.6. Bus de Direcciones
 
 El bus de direcciones transporta direcciones de memoria que indican dónde se encuentran los datos o instrucciones que la CPU desea acceder. La cantidad de líneas en el bus de direcciones determina la cantidad máxima de memoria que puede ser direccionada por la CPU.
 
-### 3.7. Bus de Control
+#### 3.7. Bus de Control
 
 El bus de control transporta señales que controlan y coordinan las operaciones de la CPU y otros componentes del sistema, indicando, por ejemplo, cuándo leer o escribir en la memoria.
 
-### 3.8. Decodificador de Instrucciones
+#### 3.8. Decodificador de Instrucciones
 
 El decodificador de instrucciones interpreta las instrucciones de la memoria y las traduce en señales que la unidad de control puede entender, permitiendo que la CPU ejecute las instrucciones de manera correcta.
 
