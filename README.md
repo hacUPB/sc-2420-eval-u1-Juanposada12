@@ -143,7 +143,7 @@ Estructura tecnológica que permite el acceso a recursos informáticos a través
 ![image](https://github.com/user-attachments/assets/ce856578-7105-40db-bbc9-6876fe62b59b)
 
 ### 5. PROFUNDIZACION DE CPU
-# Profundización de la CPU (Unidad Central de Procesamiento)
+
 
 ## 1. ¿Qué es la CPU?
 
