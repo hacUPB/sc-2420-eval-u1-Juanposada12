@@ -139,7 +139,8 @@ Es un enfoque de diseño de computadoras que se basa en la utilización de múlt
 ### 6. Arquitectura de la Computación en la Nube
 Estructura tecnológica que permite el acceso a recursos informáticos a través de Internet, como almacenamiento, potencia de procesamiento y aplicaciones, sin que los usuarios tengan que poseer o administrar físicamente los equipos y servidores que los proveen. Esta arquitectura es esencial para la provisión de servicios bajo demanda y la escalabilidad de aplicaciones.
 
-## 4. MAPA CONCEPTUAL https://lucid.app/lucidspark/c04cb10c-07fc-4021-9588-f89fb9de7797/edit?view_items=-mO39900AnWs&invitationId=inv_a29f7434-2615-418e-8887-65cf5e40a561
+## 4. MAPA CONCEPTUAL 
+https://lucid.app/lucidspark/c04cb10c-07fc-4021-9588-f89fb9de7797/edit?view_items=-mO39900AnWs&invitationId=inv_a29f7434-2615-418e-8887-65cf5e40a561
 ![image](https://github.com/user-attachments/assets/ce856578-7105-40db-bbc9-6876fe62b59b)
 
 ## 5. PROFUNDIZACION DE CPU
@@ -201,3 +202,4 @@ El bus de control transporta señales que controlan y coordinan las operaciones 
 
 El decodificador de instrucciones interpreta las instrucciones de la memoria y las traduce en señales que la unidad de control puede entender, permitiendo que la CPU ejecute las instrucciones de manera correcta.
 
+## 6. Audio o video https://we.tl/t-jWACzfVtly
