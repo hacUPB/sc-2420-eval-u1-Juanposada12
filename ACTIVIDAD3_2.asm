@@ -1,23 +1,23 @@
-// Inicializaci髇 de la pantalla
-@SCREEN      // Direcci髇 de la pantalla
-D=A          // Cargar la direcci髇 de la pantalla en D
+// Inicializaci贸n de la pantalla
+@SCREEN      // Direcci贸n de la pantalla
+D=A          // Cargar la direcci贸n de la pantalla en D
 @SCREEN
 M=D          // Inicializar la pantalla
 
 (LOOP)
-@KBD         // Direcci髇 del teclado
+@KBD         // Direcci贸n del teclado
 D=M          // Leer el estado del teclado
 @WAIT
 D;JEQ        // Si no hay tecla presionada, esperar
 
 // Tecla presionada, mostrar
 @KBD
-D=M          // Leer el car醕ter del teclado
+D=M          // Leer el car谩cter del teclado
 @SCREEN
-A=M          // Obtener la direcci髇 de la pantalla
-M=D          // Escribir el car醕ter en la pantalla
+A=M          // Obtener la direcci贸n de la pantalla
+M=D          // Escribir el car谩cter en la pantalla
 @SCREEN
-M=M+1        // Mover a la siguiente posici髇
+M=M+1        // Mover a la siguiente posici贸n
 
 @LOOP
 0;JMP        // Volver al inicio
@@ -25,3 +25,8 @@ M=M+1        // Mover a la siguiente posici髇
 (END)
 @END
 0;JMP        // Fin del programa
+//El programa se ejecuta en un bucle infinito donde verifica constantemente si se ha presionado una tecla en el teclado.
+//Si no se ha presionado ninguna tecla (el valor en RAM[KBD] es 0), el programa espera.
+//Cuando se presiona una tecla, el car谩cter correspondiente se lee desde RAM[KBD] y se muestra en la pantalla en la posici贸n actual.
+//La posici贸n de la pantalla se incrementa en cada iteraci贸n, de modo que el siguiente car谩cter se dibuja en la siguiente celda de la pantalla.
+//El programa vuelve a verificar si se ha presionado una tecla y repite el proceso.
