@@ -1,6 +1,6 @@
-// Inicializaci髇 de la pantalla
-@SCREEN      // Direcci髇 de la pantalla
-D=A          // Cargar la direcci髇 de la pantalla en D
+// Inicializaci贸n de la pantalla
+@SCREEN      // Direcci贸n de la pantalla
+D=A          // Cargar la direcci贸n de la pantalla en D
 @SCREEN
 M=D          // Inicializar la pantalla
 
@@ -8,7 +8,7 @@ M=D          // Inicializar la pantalla
 M=0          // Contador
 
 (LOOP)
-@KBD         // Direcci髇 del teclado
+@KBD         // Direcci贸n del teclado
 D=M          // Leer el estado del teclado
 @WAIT
 D;JEQ        // Si no hay tecla presionada, esperar
@@ -22,10 +22,10 @@ M=D          // Almacenar el nuevo contador
 
 // Mostrar contador en la pantalla
 @SCREEN
-A=M          // Obtener direcci髇 de la pantalla
+A=M          // Obtener direcci贸n de la pantalla
 M=D          // Mostrar el valor del contador en la pantalla
 @SCREEN
-M=M+1        // Mover a la siguiente posici髇
+M=M+1        // Mover a la siguiente posici贸n
 
 @LOOP
 0;JMP        // Volver al inicio
@@ -33,3 +33,8 @@ M=M+1        // Mover a la siguiente posici髇
 (END)
 @END
 0;JMP        // Fin del programa
+//Contador inicializado a 0: El contador comienza con el valor 0, que se almacena en RAM[0].
+//Espera por una tecla: El programa entra en un bucle donde verifica si se ha presionado una tecla.
+//Incremento del contador: Cada vez que se presiona una tecla, el contador se incrementa en 1.
+//Mostrar el contador en pantalla: Despu茅s de incrementar el contador, el programa muestra el nuevo valor del contador en la pantalla en la posici贸n actual. Luego, avanza a la siguiente posici贸n de la pantalla.//
+//Repetici贸n: El proceso se repite indefinidamente mientras el programa siga ejecut谩ndose, esperando una tecla y mostrando el contador actualizado.
