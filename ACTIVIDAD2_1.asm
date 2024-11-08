@@ -1,12 +1,12 @@
-// Divisi髇 entera de dos n鷐eros en RAM[0] y RAM[1]
+// Divisi贸n entera de dos n煤meros en RAM[0] y RAM[1]
 // Cociente se almacena en RAM[2]
 
-@1          // Cargar la direcci髇 del denominador
+@1          // Cargar la direcci贸n del denominador
 D=M         // Cargar el denominador en D
-@DENOM      // Etiqueta para divisi髇 por cero
+@DENOM      // Etiqueta para divisi贸n por cero
 D;JEQ       // Si el denominador es 0, saltar a END
 
-@0          // Cargar la direcci髇 del numerador
+@0          // Cargar la direcci贸n del numerador
 D=M         // Cargar el numerador en D
 @2          // Inicializar el cociente en RAM[2]
 M=0         // Cociente = 0
@@ -41,3 +41,11 @@ M=D         // Guardar el nuevo valor del numerador
 (END)
 @END
 0;JMP       // Fin del programa
+//Este c贸digo implementa una divisi贸n entera por medio de restas sucesivas. La idea es restar el denominador del numerador de manera repetida hasta que el numerador sea menor que el denominador. En cada iteraci贸n, se incrementa el cociente (que es el n煤mero de veces que el denominador cabe en el numerador).
+
+//Por ejemplo, si el numerador es 10 y el denominador es 3:
+
+//En la primera iteraci贸n, el numerador pasa a ser 7, y el cociente se incrementa a 1.
+//En la segunda iteraci贸n, el numerador pasa a ser 4, y el cociente se incrementa a 2.
+//En la tercera iteraci贸n, el numerador pasa a ser 1, y el cociente se incrementa a 3.
+//El bucle se detiene cuando el numerador es menor que el denominador, y el valor final del cociente (en RAM[2]) ser谩 el resultado de la divisi贸n entera.
