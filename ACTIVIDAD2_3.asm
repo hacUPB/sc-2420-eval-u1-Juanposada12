@@ -4,7 +4,7 @@ D=M          // Cargar N en D
 @N
 M=D          // Guardar N en RAM[N]
 @1
-M=0          // Inicializar la posici髇 de almacenamiento en RAM[1]
+M=0          // Inicializar la posici贸n de almacenamiento en RAM[1]
 
 (LOOP)
 @N
@@ -15,15 +15,15 @@ D;JEQ        // Si N es 0, saltar al final
 @N
 D=M          // Cargar N en D
 @1
-A=M          // Obtener la direcci髇 de almacenamiento
+A=M          // Obtener la direcci贸n de almacenamiento
 M=D          // Almacenar el valor de N en RAM[A]
 
 @N
 D=M          // Cargar N en D
 @1
-D=D+1        // Incrementar el 韓dice de almacenamiento
+D=D+1        // Incrementar el 铆ndice de almacenamiento
 @1
-M=D          // Actualizar la posici髇 de almacenamiento
+M=D          // Actualizar la posici贸n de almacenamiento
 
 @N
 D=M          // Cargar N en D
@@ -37,3 +37,7 @@ M=D          // Guardar el nuevo valor de N
 (END)
 @END
 0;JMP        // Fin del programa
+//Comienza con un valor N almacenado en RAM[0].
+//En cada iteraci贸n, almacena el valor de N en RAM[1], RAM[2], RAM[3], etc.
+//Despu茅s de almacenar N, el c贸digo decrementa N en 1 y actualiza el 铆ndice de almacenamiento (RAM[1] se convierte en RAM[2], luego en RAM[3], etc.).
+//El proceso se repite hasta que N llegue a 0, momento en el cual el programa termina.
