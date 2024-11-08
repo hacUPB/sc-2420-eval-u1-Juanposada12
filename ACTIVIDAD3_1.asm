@@ -1,31 +1,31 @@
-// Inicializaci髇 de la pantalla
-@256         // Direcci髇 de la pantalla
-D=A          // Cargar la direcci髇 de la pantalla en D
+// Inicializaci贸n de la pantalla
+@256         // Direcci贸n de la pantalla
+D=A          // Cargar la direcci贸n de la pantalla en D
 @SCREEN      // Etiqueta para la pantalla
-M=D          // Inicializar la pantalla en la direcci髇 256
+M=D          // Inicializar la pantalla en la direcci贸n 256
 
-// Dibujar una l韓ea en la mitad de la pantalla
+// Dibujar una l铆nea en la mitad de la pantalla
 @120         // Asumimos que la pantalla tiene 256 posiciones, comenzamos en la mitad
-D=A          // Cargar la posici髇 inicial
-@LINE        // Etiqueta para la l韓ea
-M=D          // Almacenar la posici髇 de inicio
+D=A          // Cargar la posici贸n inicial
+@LINE        // Etiqueta para la l铆nea
+M=D          // Almacenar la posici贸n de inicio
 
-@10          // N鷐ero de caracteres a dibujar
-D=A          // Cargar el n鷐ero de caracteres en D
+@10          // N煤mero de caracteres a dibujar
+D=A          // Cargar el n煤mero de caracteres en D
 @COUNT       // Etiqueta para contar caracteres
 M=D          // Inicializar el contador
 
 (LOOP)
 @LINE
-D=M          // Cargar la posici髇 actual de la l韓ea
+D=M          // Cargar la posici贸n actual de la l铆nea
 @SCREEN
-A=D          // Establecer direcci髇 en la pantalla
-M='-'        // Dibujar el car醕ter '-'
+A=D          // Establecer direcci贸n en la pantalla
+M='-'        // Dibujar el car谩cter '-'
 @LINE
-D=M          // Cargar nuevamente la posici髇 de la l韓ea
-D=D+1        // Mover a la siguiente posici髇
+D=M          // Cargar nuevamente la posici贸n de la l铆nea
+D=D+1        // Mover a la siguiente posici贸n
 @LINE
-M=D          // Actualizar la posici髇 de la l韓ea
+M=D          // Actualizar la posici贸n de la l铆nea
 
 @COUNT       // Verificar si hemos dibujado todos los caracteres
 D=M
@@ -40,3 +40,7 @@ M=D          // Actualizar el contador
 (END)
 @END
 0;JMP        // Fin del programa
+//El programa comienza inicializando la pantalla en la direcci贸n 256 y configurando la posici贸n de inicio de la l铆nea en la posici贸n 120.
+//Luego, inicializa un contador para contar los 10 caracteres que desea dibujar.
+//En cada iteraci贸n del bucle, dibuja un car谩cter '-' en la pantalla y mueve a la siguiente posici贸n.
+//El contador se decrementa en cada iteraci贸n, y cuando el contador llega a 0, el programa termina.
